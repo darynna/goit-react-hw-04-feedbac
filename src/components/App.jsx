@@ -44,7 +44,7 @@ const App = ()=>{
   return (
     <MainWrap>
     <Section title={'Please leave feedback'}>
-    <FeedbackOptions options={['good', 'neutral', 'bad']} onLeavefeedback={onLeavefeedback}/>
+    <FeedbackOptions options={Object.keys({good, neutral, bad})} onLeavefeedback={onLeavefeedback}/>
     </Section>
     <Section title={'Statistic'}>
       {total === 0 ? <Notification Textmessage="There is no feedback"/> :
